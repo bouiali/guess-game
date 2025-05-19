@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+header{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+.content{
+    padding: 20px;
+    height: 87%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #eee;
+}
+.game{
+    
+}
+.game .lines{
+
+}
+.game .lines .line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.game .lines .line p{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: grey;
+}
+.game .lines .line input{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid grey;
+    text-align: center;
+}
+.game .lines .line input:focus{
+    outline: none;
+}
+/* start valid line style */
+.game .lines .valid{
+
+}
+.game .lines .valid p{
+    color: black; 
+}
+.game .lines .valid input{
+    border-bottom: 2px solid black;
+    font-size: larger;
+}
+/* end valid line style */
+
+/* start done line style */
+.game .lines .done{
+
+}
+.game .lines .done p{
+    
+}
+.game .lines .done input{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    border: none;
+}
+/* end done line style */
+.game .buttons{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.game .buttons button{
+    padding: 8px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.game .buttons button:first-child{
+    background-color: red;
+    width: 69%;
+}
+.game .buttons button:last-child{
+    background-color: green;
+    width: 29%;
+}
+.keys{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.keys .title{
+    text-align: center;
+}
+.keys .title h2{
+    
+}
+.keys .key{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+.keys .key p{
+   
+}
+.keys .key span{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+@media (max-width: 668px){
+    .content{
+        flex-direction: column;
+    }
+    input{
+        width: 35px;
+        height: 35px;
+    }
+}
